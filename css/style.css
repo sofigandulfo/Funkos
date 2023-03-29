@@ -2,8 +2,9 @@
 font-family: 'Raleway', sans-serif;
 font-family: 'Inter', sans-serif;
 */
-html{
-    font-size: 62.5%; /*10px*/
+html {
+    font-size: 62.5%;
+    /*10px*/
 }
 
 
@@ -17,7 +18,7 @@ html{
 
 #header {
     background: #30343F;
-    height: 144px;
+    height: 14.4rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -45,17 +46,24 @@ ul li a {
     color: #FFFFFF;
     text-decoration: none;
     margin: 2rem;
+    transition: all 0.2s ease;
 }
 
+ul li a:hover{
+        color: #FF3333;
+        
+    }
+
+
 .banner-nav {
-    width: 372px;
-    height: 65px;
+    width: 37rem;
+    height: 6.5rem;
     margin: 11rem;
 }
 
 /*Estilos del hero de la pag principal*/
 
-.hero{
+.hero {
     display: flex;
     align-items: center;
 }
@@ -66,8 +74,8 @@ ul li a {
     background-image: url('/img/multimedia/funkos-banner.webp');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:center;
-    filter:blur(2px) brightness(0.6);
+    background-position: center;
+    filter: blur(2px) brightness(0.6);
     display: flex;
 }
 
@@ -100,7 +108,7 @@ ul li a {
     margin: 0;
 }
 
-.hero-button{
+.hero-button {
     background: #FFFFFF;
     border-radius: 50px;
     padding: 12px 78px;
@@ -111,10 +119,18 @@ ul li a {
     line-height: 24px;
     text-decoration: none;
     color: #111111;
+    transition: all 0.2s ease;
+}
+
+.hero-button:hover{
+    background: #FF3333;
+    color: #FFFFFF;
+  
 }
 
 
 /*Estilos del funko 1*/
+
 
 .funko1 {
     display: flex;
@@ -122,8 +138,67 @@ ul li a {
     margin: 0 61.5px;
 }
 
+.funko1 img {
+    color: transparent;
+}
+
+.funko1 h2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 54px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: #111111;
+}
+
+.funko1 p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+    color: #4F4F4F;
+}
+
+.funko1 hr {
+    width: 620px;
+    height: 0px;
+    margin: 28px 0 52px;
+    border: 2px solid #FF3333;
+}
+
+.funko1 a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    background: #30343F;
+    border-radius: 50px;
+    padding: 18px 48px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.funko1 a:hover{
+    background-color:#111111 ;
+    
+}
+
+
+/*
+.funko1 {
+    display: flex;
+    align-items: center;
+    margin: 0 61.5px;
+}
+
 .funko1-divtext{
-    width: 590px;
+    width: 5.9rem;
 }
 
 .funko1 img{
@@ -171,17 +246,17 @@ ul li a {
     color: #FFFFFF;
     text-decoration: none;
 }
-
+*/
 /*Estilos del funko 2*/
 
 .funko2 {
     display: flex;
     align-items: center;
     margin: 0 61.5px;
-    
+
 }
 
-.funko2 img{
+.funko2 img {
     width: 600px;
 }
 
@@ -218,8 +293,13 @@ ul li a {
     padding: 18px 48px;
     color: #FFFFFF;
     text-decoration: none;
+    transition: all 0.2s ease;
 }
 
+.funko2 a:hover{
+    background-color:#111111 ;
+    
+}
 .funko2 hr {
     width: 620px;
     height: 0px;
@@ -235,8 +315,8 @@ ul li a {
     margin: 0 61.5px;
 }
 
-.funko3 img{
-color:transparent;
+.funko3 img {
+    color: transparent;
 }
 
 .funko3 h2 {
@@ -278,8 +358,13 @@ color:transparent;
     padding: 18px 48px;
     color: #FFFFFF;
     text-decoration: none;
+    transition: all 0.2s ease;
 }
 
+.funko3 a:hover{
+    background-color:#111111 ;
+    
+}
 
 /*Estilos carrousel*/
 
@@ -332,6 +417,17 @@ figure {
     width: 100%;
 }
 
+.producto{
+    transition: all 0.5s ease;
+}
+
+.producto:hover{
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.58);
+-webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.58);
+-moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.58);
+
+}
+
 .categoria {
     font-family: 'Inter';
     font-style: normal;
@@ -372,17 +468,16 @@ figure {
     margin-right: 71px;
 }
 
-.info-producto p, h4{
+.info-producto p,
+h4 {
     margin: 14px;
 }
+
 /*Estilos del footer*/
 
 #footer {
     background: #30343F;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    padding: 3.1rem
 }
 
 .footer ul {
@@ -399,14 +494,365 @@ figure {
 }
 
 .footer p {
-    display: flex;
-    align-items: flex-end;
-
+   display: flex;
+    justify-content: center;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
-
+    
     color: #FFFFFF;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+/*Extra small devices (phones, 600px and down*/
+@media only screen and (max-width: 600px) {
+
+    /*Header*/
+    #header {
+        height: 14.4rem;
+    }
+
+    .header-list {
+        display: block;
+    }
+
+
+    nav {
+        margin: 0rem 5.5rem;
+    }
+
+    ul li a {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        margin: 1.5rem;
+    }
+
+    .banner-nav {
+        width: 18.5rem;
+        height: 6.5rem;
+        margin: 5.5rem;
+    }
+
+    nav ul li{
+        margin: .3rem;
+    }
+
+
+    /*Estilos del hero de la pag principal*/
+
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-background {
+        width: 100%;
+        height: 30rem;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .hero-p {
+        font-size: 1.4rem;
+        line-height: 1rem;
+        letter-spacing: 0em;
+        margin-top: 0.3rem;
+        margin-bottom: 2.4rem;
+
+    }
+
+    .hero-title {
+        font-size: 2.9rem;
+        font-weight: 700;
+        line-height: 45px;
+        letter-spacing: 0em;
+        margin: 0;
+    }
+
+    .hero-button {
+        border-radius: 50px;
+        padding: 1.2rem 7.8rem;
+        font-size: 2rem;
+        line-height: 1.2rem;
+    }
+
+
+
+    /*Estilos del funko 1*/
+
+    .funko1 {
+        display: flex;
+        align-items: center;
+        margin: 0 4rem;
+        flex-direction: column-reverse;
+    }
+
+    .funko1-divtext {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .funko1 img {
+        width: 40rem;
+    }
+
+
+    .funko1 h2 {
+        font-size: 3.3rem;
+        line-height: 2.7rem;
+        margin-bottom: 0.6rem;
+        display: flex;
+    }
+
+    .funko1 p {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        margin: 0;
+    }
+
+    .funko1 hr {
+        width: 40rem;
+        height: 0px;
+        margin: 1.4rem 0 2.6rem;
+    }
+
+    .funko1 a {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        border-radius: 50px;
+        padding: 0.9rem 2.4rem;
+
+    }
+
+
+
+
+    /*Estilos del funko 2*/
+
+    .funko2 {
+        display: flex;
+        align-items: center;
+        margin: 0 4rem;
+        flex-direction: column;
+    }
+
+    .funko2-divtext {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .funko2 img {
+        width: 40rem;
+    }
+
+
+    .funko2 h2 {
+        font-size: 3.3rem;
+        line-height: 2.7rem;
+        margin-bottom: 0.6rem;
+        display: flex;
+    }
+
+    .funko2 p {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        margin: 0;
+    }
+
+    .funko2 hr {
+        width: 40rem;
+        height: 0px;
+        margin: 1.4rem 0 2.6rem;
+    }
+
+    .funko2 a {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        border-radius: 50px;
+        padding: 0.9rem 2.4rem;
+    }
+
+
+
+
+    /*Estilos del funko 3*/
+
+    .funko3 {
+        display: flex;
+        align-items: center;
+        margin: 0 4rem;
+        flex-direction: column-reverse;
+    }
+
+    .funko3-divtext {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .funko3 img {
+        width: 40rem;
+    }
+
+
+    .funko3 h2 {
+        font-size: 3.3rem;
+        line-height: 2.7rem;
+        margin-bottom: 0.6rem;
+        display: flex;
+    }
+
+    .funko3 p {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        margin: 0;
+    }
+
+    .funko3 hr {
+        width: 40rem;
+        height: 0px;
+        margin: 1.4rem 0 2.6rem;
+    }
+
+    .funko3 a {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        border-radius: 50px;
+        padding: 0.9rem 2.4rem;
+    }
+
+
+
+    /*Estilos carrousel*/
+
+    .section-sec {
+        margin: 0 3.1rem;
+        margin-bottom: 3.4rem;
+    }
+
+    .producto {
+        margin: 1rem;
+    }
+
+
+    figure {
+        position: relative;
+    }
+
+    .new-text {
+        margin: 0;
+        font-size: 1.4rem;
+        line-height: 0.8rem;
+        padding: 7px 22.5px;
+        display: block;
+        align-items: center;
+        position: absolute;
+        right: 0;
+    }
+
+    .section-sec h2 {
+        font-size: 3rem;
+        line-height: 2.7rem;
+        margin-bottom: 0.3rem;
+        margin: 5rem 0rem 3rem;
+    }
+
+    .lista-carrusel {
+        list-style: none;
+        display: block;
+
+    }
+
+    .lista-carrusel li img {
+        width: 100%;
+    }
+
+    .categoria {
+        font-size: 1.1rem;
+        line-height: 1.2rem;
+    }
+
+    .nombre-funko {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+
+    .precio {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+
+    .cuotas {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    .lista-carrusel li {
+        margin-right: 0rem;
+    }
+
+    .info-producto p,
+    h4 {
+        margin: 1.1rem;
+    }
+
+
+
+
+/*Estilos del footer*/
+
+#footer {
+    padding:3.1rem;
+}
+
+.footer ul {
+    margin: /*5.5rem 2.5rem */ 0;
+    margin-right: 0;
+}
+
+.footer ul li {
+    padding: 0.3rem;
+}
+
+.footer img {
+    margin: /*5.5rem*/ 0;
+    margin-right: 0;
+}
+
+.footer p {
+    font-size: 1.5rem;
+    line-height: 1.2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
 }
