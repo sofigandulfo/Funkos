@@ -37,7 +37,7 @@ nav {
     margin: 0rem 11rem;
 }
 
-ul li a {
+.a-list {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
@@ -49,10 +49,10 @@ ul li a {
     transition: all 0.2s ease;
 }
 
-ul li a:hover{
-        color: #FF3333;
-        
-    }
+ul li a:hover {
+    color: #FF3333;
+
+}
 
 
 .banner-nav {
@@ -122,10 +122,10 @@ ul li a:hover{
     transition: all 0.2s ease;
 }
 
-.hero-button:hover{
+.hero-button:hover {
     background: #FF3333;
     color: #FFFFFF;
-  
+
 }
 
 
@@ -184,9 +184,9 @@ ul li a:hover{
     transition: all 0.2s ease;
 }
 
-.funko1 a:hover{
-    background-color:#111111 ;
-    
+.funko1 a:hover {
+    background-color: #111111;
+
 }
 
 
@@ -296,10 +296,11 @@ ul li a:hover{
     transition: all 0.2s ease;
 }
 
-.funko2 a:hover{
-    background-color:#111111 ;
-    
+.funko2 a:hover {
+    background-color: #111111;
+
 }
+
 .funko2 hr {
     width: 620px;
     height: 0px;
@@ -361,9 +362,9 @@ ul li a:hover{
     transition: all 0.2s ease;
 }
 
-.funko3 a:hover{
-    background-color:#111111 ;
-    
+.funko3 a:hover {
+    background-color: #111111;
+
 }
 
 /*Estilos carrousel*/
@@ -417,15 +418,19 @@ figure {
     width: 100%;
 }
 
-.producto{
+.producto {
     transition: all 0.5s ease;
 }
 
-.producto:hover{
-    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.58);
--webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.58);
--moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.58);
+.producto:hover {
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.58);
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.58);
 
+}
+
+.producto a {
+    text-decoration: none;
 }
 
 .categoria {
@@ -462,6 +467,7 @@ figure {
     font-size: 12px;
     line-height: 15px;
     color: #1D84B5;
+    padding-bottom: 1rem;
 }
 
 .lista-carrusel li {
@@ -494,22 +500,303 @@ h4 {
 }
 
 .footer p {
-   display: flex;
+    display: flex;
     justify-content: center;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
-    
+
     color: #FFFFFF;
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+}
+
+
+/*ESTILOS PAGINA SHOP*/
+
+/*Estilos del Form, Aside*/
+.aside-shop {
+    display: flex;
+    margin: 6.2rem;
+    margin-right: 0;
+}
+
+.form-shop {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-buscar {
+    margin: 1rem 0 2rem;
+    padding: 1rem;
+    width: 18rem;
+    height: 3rem;
+    border: 2px solid #30343F;
+    border-radius: 6px;
+}
+
+.select-ordenar {
+    margin: 1rem 0 2rem;
+    padding-left: 0.7rem;
+    width: 18rem;
+    height: 3rem;
+    border: 2px solid #30343F;
+    border-radius: 6px;
+}
+
+.select-ordenar .options{
+    color:gray
+}
+
+.form-shop label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-shop p {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #111111;
+}
+
+.form-checkbox-shop{
+    margin: 1.6rem 0 0 1rem;
+}
+
+.p-form-checkbox-shop {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #111111;
+    margin-left: 0.5rem;
+}
+
+.label-precio {
+    display: flex;
+    margin: 1rem 0 2rem;
+}
+
+.label-precio p{
+    margin: 0 0.5rem;
+}
+
+.label-precio input {
+    width: 4rem;
+    display: flex;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.ul-list-form-checkbox-shop {
+    /*ul*/
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+.list-form-checkbox-shop {
+    /*li*/
+    display: flex;
+}
+
+
+/*Estilos del main de la página SHOP, Grid*/
+#main-shop {
+    display: flex;
+}
+
+.funkos-container {
+    display: flex;
+    margin: 6.2rem;
+    margin-left: 3rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 30px;
+    grid-auto-columns: 130px;
+}
+
+.grid-item{
+    transition: all 0.5s ease;
+}
+
+.grid-item:hover{
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.58);
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.58);
+}
+
+.grid-item figure {
+    width: 335px;
+    height: 335px;
+}
+
+.grid-item img {
+    width: 335px;
+    height: 335px;
+}
+
+.grid-item a {
+    text-decoration: none;
+}
+
+.categoria {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.nombre-funko {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #111111;
+}
+
+.precio {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.cuotas {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #1D84B5;
+}
+
+
+
+/*ESTILOS PAGINA ITEM*/
+
+/*Estilos del main*/
+
+.item-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6.8rem 0;
+}
+
+.item-container img{
+    width: 50rem;
+    height: 50rem;
+}
+
+.info-item-container {
+    /* margin: 0 11rem 0 6.5rem; */
+    width: 58rem;
+}
+
+.info-item-container .categoria{
+font-size: 16px;
+}
+
+.info-item-container .nombre-funko{
+font-size: 38px;
+margin: 2rem 0 ;
+}
+
+.info-item-container .description-item{
+    
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+color: #333333;
+}
+
+.info-item-container .precio{
+    font-size: 38px;
+    margin: 2rem 0 2.8rem ;
+}
+
+.info-item-container #menos, #mas{
+    width: 3.9rem;
+    height: 3.9rem;
+    background: #4F4F4F; 
+    color: #FFFFFF;
+    border: none;
+    font-size: 20px;
+}
+
+.info-item-container input[type=number]{
    
+box-sizing: border-box;
+width: 3.9rem;
+height: 3.3rem;
+background: #FFFFFF;
+border: 0.5px solid #C9C9C9;
+text-align: center;
+box-shadow: none;
+margin: 0 1.3rem;
+font-size: 20px;
+}
+
+.info-item-container .add-cart{
+    width: 18.1rem;
+    height: 3.8rem;
+    background: #FF3333;
+    color: #FFFFFF;
+    border: none;
+    margin: 0 2.1rem;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+}
+
+.info-item-container .cuotas{
+font-size: 14px;
+margin: 2.7rem 0 0;
+}
+.info-item-container .metodos{
+
+color: #1D84B5;
+
+
 }
 
 /*Extra small devices (phones, 600px and down*/
@@ -521,12 +808,16 @@ h4 {
     }
 
     .header-list {
-        display: block;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
     }
 
 
     nav {
-        margin: 0rem 5.5rem;
+        margin: 0rem 3rem;
     }
 
     ul li a {
@@ -541,7 +832,7 @@ h4 {
         margin: 5.5rem;
     }
 
-    nav ul li{
+    nav ul li {
         margin: .3rem;
     }
 
@@ -618,7 +909,6 @@ h4 {
         font-size: 3.3rem;
         line-height: 2.7rem;
         margin-bottom: 0.6rem;
-        display: flex;
     }
 
     .funko1 p {
@@ -819,40 +1109,44 @@ h4 {
 
 
 
-/*Estilos del footer*/
+    /*Estilos del footer*/
 
-#footer {
-    padding:3.1rem;
-}
+    #footer {
+        padding: 3.1rem;
+    }
 
-.footer ul {
-    margin: /*5.5rem 2.5rem */ 0;
-    margin-right: 0;
-}
+    .footer ul {
+        margin:
+            /*5.5rem 2.5rem */
+            0;
+        margin-right: 0;
+    }
 
-.footer ul li {
-    padding: 0.3rem;
-}
+    .footer ul li {
+        padding: 0.3rem;
+    }
 
-.footer img {
-    margin: /*5.5rem*/ 0;
-    margin-right: 0;
-}
+    .footer img {
+        margin:
+            /*5.5rem*/
+            0;
+        margin-right: 0;
+    }
 
-.footer p {
-    font-size: 1.5rem;
-    line-height: 1.2rem;
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
+    .footer p {
+        font-size: 1.5rem;
+        line-height: 1.2rem;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
 
-}
+    }
 
-.footer-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   
-}
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
 
 }
