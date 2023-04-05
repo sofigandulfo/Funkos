@@ -131,6 +131,11 @@ ul li a:hover {
 
 /*Estilos del funko 1*/
 
+.section-pri{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .funko1 {
     display: flex;
@@ -799,8 +804,8 @@ color: #1D84B5;
 
 }
 
-/*Extra small devices (phones, 600px and down*/
-@media only screen and (max-width: 600px) {
+/*Extra small devices (phones, 768px and down*/
+@media only screen and (max-width: 768px) {
 
     /*Header*/
     #header {
