@@ -37,6 +37,14 @@ nav {
     margin: 0rem 11rem;
 }
 
+button#menu-hamburguesa {
+    display: none;
+}
+
+.cerrar-menu {
+    display: none;
+}
+
 .a-list {
     font-family: 'Raleway';
     font-style: normal;
@@ -47,6 +55,10 @@ nav {
     text-decoration: none;
     margin: 2rem;
     transition: all 0.2s ease;
+}
+
+.a-list:last-child {
+    margin-right: 0;
 }
 
 ul li a:hover {
@@ -131,7 +143,7 @@ ul li a:hover {
 
 /*Estilos del funko 1*/
 
-.section-pri{
+.section-pri {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -194,64 +206,6 @@ ul li a:hover {
 
 }
 
-
-/*
-.funko1 {
-    display: flex;
-    align-items: center;
-    margin: 0 61.5px;
-}
-
-.funko1-divtext{
-    width: 5.9rem;
-}
-
-.funko1 img{
-    width: 600px;
-}
-
-
-.funko1 h2 {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 46px;
-    line-height: 54px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-    color: #111111;
-}
-
-.funko1 p {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    margin: 0;
-    color: #4F4F4F;
-}
-
-.funko1 hr {
-    width: 620px;
-    height: 0px;
-    margin: 28px 0 52px;
-    border: 2px solid #FF3333;
-}
-
-.funko1 a {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    background: #30343F;
-    border-radius: 50px;
-    padding: 18px 48px;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-*/
 /*Estilos del funko 2*/
 
 .funko2 {
@@ -488,7 +442,8 @@ h4 {
 
 #footer {
     background: #30343F;
-    padding: 3.1rem
+    padding: 3.1rem;
+    width: 100%;
 }
 
 .footer ul {
@@ -556,8 +511,8 @@ h4 {
     border-radius: 6px;
 }
 
-.select-ordenar .options{
-    color:gray
+.select-ordenar .options {
+    color: gray
 }
 
 .form-shop label {
@@ -581,7 +536,7 @@ h4 {
     color: #111111;
 }
 
-.form-checkbox-shop{
+.form-checkbox-shop {
     margin: 1.6rem 0 0 1rem;
 }
 
@@ -601,7 +556,7 @@ h4 {
     margin: 1rem 0 2rem;
 }
 
-.label-precio p{
+.label-precio p {
     margin: 0 0.5rem;
 }
 
@@ -651,11 +606,11 @@ input[type=number]::-webkit-outer-spin-button {
     grid-auto-columns: 130px;
 }
 
-.grid-item{
+.grid-item {
     transition: all 0.5s ease;
 }
 
-.grid-item:hover{
+.grid-item:hover {
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.58);
     -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.58);
     -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.58);
@@ -716,14 +671,14 @@ input[type=number]::-webkit-outer-spin-button {
 
 /*Estilos del main*/
 
-.item-container{
+.item-container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 6.8rem 0;
 }
 
-.item-container img{
+.item-container img {
     width: 50rem;
     height: 50rem;
 }
@@ -733,79 +688,81 @@ input[type=number]::-webkit-outer-spin-button {
     width: 58rem;
 }
 
-.info-item-container .categoria{
-font-size: 16px;
+.info-item-container .categoria {
+    font-size: 16px;
 }
 
-.info-item-container .nombre-funko{
-font-size: 38px;
-margin: 2rem 0 ;
-}
-
-.info-item-container .description-item{
-    
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-color: #333333;
-}
-
-.info-item-container .precio{
+.info-item-container .nombre-funko {
     font-size: 38px;
-    margin: 2rem 0 2.8rem ;
+    margin: 2rem 0;
 }
 
-.info-item-container #menos, #mas{
+.info-item-container .description-item {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+}
+
+.info-item-container .precio {
+    font-size: 38px;
+    margin: 2rem 0 2.8rem;
+}
+
+.info-item-container #menos,
+#mas {
     width: 3.9rem;
     height: 3.9rem;
-    background: #4F4F4F; 
+    background: #4F4F4F;
     color: #FFFFFF;
     border: none;
     font-size: 20px;
 }
 
-.info-item-container input[type=number]{
-   
-box-sizing: border-box;
-width: 3.9rem;
-height: 3.3rem;
-background: #FFFFFF;
-border: 0.5px solid #C9C9C9;
-text-align: center;
-box-shadow: none;
-margin: 0 1.3rem;
-font-size: 20px;
+.info-item-container input[type=number] {
+
+    box-sizing: border-box;
+    width: 3.9rem;
+    height: 3.3rem;
+    background: #FFFFFF;
+    border: 0.5px solid #C9C9C9;
+    text-align: center;
+    box-shadow: none;
+    margin: 0 1.3rem;
+    font-size: 20px;
 }
 
-.info-item-container .add-cart{
+.info-item-container .add-cart {
     width: 18.1rem;
     height: 3.8rem;
     background: #FF3333;
     color: #FFFFFF;
     border: none;
     margin: 0 2.1rem;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 22px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
 }
 
-.info-item-container .cuotas{
-font-size: 14px;
-margin: 2.7rem 0 0;
-}
-.info-item-container .metodos{
-
-color: #1D84B5;
-
-
+.info-item-container .cuotas {
+    font-size: 14px;
+    margin: 2.7rem 0 0;
 }
 
-/*Extra small devices (phones, 768px and down*/
-@media only screen and (max-width: 768px) {
+.info-item-container .metodos {
+
+    color: #1D84B5;
+
+
+}
+
+/*Extra small devices (phones, 767px and down*/
+@media only screen and (max-width: 767px) {
 
     /*Header*/
     #header {
@@ -813,34 +770,37 @@ color: #1D84B5;
     }
 
     .header-list {
-        
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-    }
-
-
-    nav {
-        margin: 0rem 3rem;
-    }
-
-    ul li a {
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-        margin: 1.5rem;
+        display: none;
     }
 
     .banner-nav {
         width: 18.5rem;
         height: 6.5rem;
-        margin: 5.5rem;
+        margin: 2.5rem;
     }
 
-    nav ul li {
-        margin: .3rem;
+    nav {
+        margin: 0 9vw 0 0;
     }
 
+    button#menu-hamburguesa {
+        display: block;
+        background: transparent;
+        border: none;
+    }
+
+    .mostrar-menu {
+        display: block;
+    }
+
+    .cerrar-menu {
+        display: block;
+    }
+
+    .cerrar-menu button{
+        background: transparent;
+        border: none;
+    }
 
     /*Estilos del hero de la pag principal*/
 
@@ -893,6 +853,7 @@ color: #1D84B5;
 
     .funko1 {
         display: flex;
+        width: 100%;
         align-items: center;
         margin: 0 4rem;
         flex-direction: column-reverse;
@@ -900,13 +861,14 @@ color: #1D84B5;
 
     .funko1-divtext {
         width: 100%;
+        padding: 0 5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .funko1 img {
-        width: 40rem;
+        width: 30rem;
     }
 
 
@@ -914,16 +876,18 @@ color: #1D84B5;
         font-size: 3.3rem;
         line-height: 2.7rem;
         margin-bottom: 0.6rem;
+        text-align: center;
     }
 
     .funko1 p {
         font-size: 1.2rem;
         line-height: 1.4rem;
-        margin: 0;
+        margin: 0 5vw;
+        text-align: center;
     }
 
     .funko1 hr {
-        width: 40rem;
+        width: 80vw;
         height: 0px;
         margin: 1.4rem 0 2.6rem;
     }
@@ -943,6 +907,7 @@ color: #1D84B5;
 
     .funko2 {
         display: flex;
+        width: 100%;
         align-items: center;
         margin: 0 4rem;
         flex-direction: column;
@@ -950,13 +915,14 @@ color: #1D84B5;
 
     .funko2-divtext {
         width: 100%;
+        padding: 0 5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .funko2 img {
-        width: 40rem;
+        width: 30rem;
     }
 
 
@@ -965,16 +931,18 @@ color: #1D84B5;
         line-height: 2.7rem;
         margin-bottom: 0.6rem;
         display: flex;
+        text-align: center;
     }
 
     .funko2 p {
         font-size: 1.2rem;
         line-height: 1.4rem;
-        margin: 0;
+        margin: 0 5vw;
+        text-align: center;
     }
 
     .funko2 hr {
-        width: 40rem;
+        width: 80vw;
         height: 0px;
         margin: 1.4rem 0 2.6rem;
     }
@@ -993,6 +961,7 @@ color: #1D84B5;
 
     .funko3 {
         display: flex;
+        width: 100%;
         align-items: center;
         margin: 0 4rem;
         flex-direction: column-reverse;
@@ -1000,13 +969,14 @@ color: #1D84B5;
 
     .funko3-divtext {
         width: 100%;
+        padding: 0 5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .funko3 img {
-        width: 40rem;
+        width: 30rem;
     }
 
 
@@ -1015,16 +985,18 @@ color: #1D84B5;
         line-height: 2.7rem;
         margin-bottom: 0.6rem;
         display: flex;
+        text-align: center;
     }
 
     .funko3 p {
         font-size: 1.2rem;
         line-height: 1.4rem;
-        margin: 0;
+        margin: 0 5vw;
+        text-align: center;
     }
 
     .funko3 hr {
-        width: 40rem;
+        width: 80vw;
         height: 0px;
         margin: 1.4rem 0 2.6rem;
     }
@@ -1121,10 +1093,7 @@ color: #1D84B5;
     }
 
     .footer ul {
-        margin:
-            /*5.5rem 2.5rem */
-            0;
-        margin-right: 0;
+        margin: 0;
     }
 
     .footer ul li {
@@ -1132,10 +1101,10 @@ color: #1D84B5;
     }
 
     .footer img {
-        margin:
-            /*5.5rem*/
-            0;
+        margin: 0;
         margin-right: 0;
+        width: 10rem;
+        height: 10rem;
     }
 
     .footer p {
@@ -1153,5 +1122,50 @@ color: #1D84B5;
         align-items: center;
 
     }
+
+}
+
+@media only screen and (max-width: 376px){
+
+    
+    /*Header*/
+    #header {
+        height: 14.4rem;
+    }
+
+    .header-list {
+        display: none;
+    }
+
+    .banner-nav {
+        width: 16rem;
+        height: 6rem;
+        margin: 1rem;
+        margin-left: 1.5rem;
+    }
+
+    nav {
+        margin: 0 12vw 0 0;
+    }
+
+    button#menu-hamburguesa {
+        display: block;
+        background: transparent;
+        border: none;
+    }
+
+    .mostrar-menu {
+        display: block;
+    }
+
+    .cerrar-menu {
+        display: block;
+    }
+
+    .cerrar-menu button{
+        background: transparent;
+        border: none;
+    }
+
 
 }
