@@ -152,11 +152,23 @@ ul li a:hover {
 .funko1 {
     display: flex;
     align-items: center;
-    margin: 0 61.5px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.funko1-divtext{
+    width: 600px;
 }
 
 .funko1 img {
     color: transparent;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.funko1-div-img{
+    width: 600px;
+    text-align: center;
 }
 
 .funko1 h2 {
@@ -168,6 +180,7 @@ ul li a:hover {
     text-transform: uppercase;
     margin-bottom: 12px;
     color: #111111;
+    width: 100%;
 }
 
 .funko1 p {
@@ -181,7 +194,7 @@ ul li a:hover {
 }
 
 .funko1 hr {
-    width: 620px;
+    width: 100%;
     height: 0px;
     margin: 28px 0 52px;
     border: 2px solid #FF3333;
@@ -211,12 +224,24 @@ ul li a:hover {
 .funko2 {
     display: flex;
     align-items: center;
-    margin: 0 61.5px;
+    margin: 0 auto;
+    max-width: 1200px ;
 
 }
 
-.funko2 img {
+.funko2-divtext{
     width: 600px;
+}
+
+.funko2 img {
+    color: transparent;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.funko2-div-img{
+    width: 600px;
+    text-align: center;
 }
 
 .funko2 h2 {
@@ -261,7 +286,7 @@ ul li a:hover {
 }
 
 .funko2 hr {
-    width: 620px;
+    width: 100%;
     height: 0px;
     margin: 28px 0 52px;
     border: 2px solid #FF3333;
@@ -272,11 +297,23 @@ ul li a:hover {
 .funko3 {
     display: flex;
     align-items: center;
-    margin: 0 61.5px;
+    margin: 0 auto;
+}
+
+
+.funko3-divtext{
+    width: 600px;
 }
 
 .funko3 img {
     color: transparent;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.funko3-div-img{
+    width: 600px;
+    text-align: center;
 }
 
 .funko3 h2 {
@@ -301,7 +338,7 @@ ul li a:hover {
 }
 
 .funko3 hr {
-    width: 620px;
+    width: 100%;
     height: 0px;
     margin: 28px 0 52px;
     border: 2px solid #FF3333;
@@ -329,12 +366,17 @@ ul li a:hover {
 /*Estilos carrousel*/
 
 .section-sec {
-    margin: 0 61.5px;
+    margin: 0 auto;
     margin-bottom: 68px;
+    max-width: 1200px;
 }
 
 figure {
     position: relative;
+}
+
+.funkosGrid{
+    margin: 0 auto;
 }
 
 .new-text {
@@ -370,6 +412,7 @@ figure {
     display: flex;
     justify-content: space-between;
     padding: 0;
+    width: 100%;
 
 }
 
@@ -430,7 +473,7 @@ figure {
 }
 
 .lista-carrusel li {
-    margin-right: 71px;
+    margin: 0 10px;
 }
 
 .info-producto p,
@@ -763,7 +806,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .info-item-container .metodos {
-
     color: #1D84B5;
 
 
@@ -876,10 +918,13 @@ input[type=number]::-webkit-outer-spin-button {
         align-items: center;
     }
 
-    .funko1 img {
-        width: 30rem;
+    .funko1 img{
+        width: 100%;
     }
 
+    .funko1-div-img{
+        width: 300px;
+    }
 
     .funko1 h2 {
         font-size: 3.3rem;
@@ -896,8 +941,6 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .funko1 hr {
-        width: 80vw;
-        height: 0px;
         margin: 1.4rem 0 2.6rem;
     }
 
@@ -931,7 +974,11 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .funko2 img {
-        width: 30rem;
+        width: 100%
+    }
+
+    .funko2-div-img{
+        width: 300px;
     }
 
 
@@ -951,8 +998,6 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .funko2 hr {
-        width: 80vw;
-        height: 0px;
         margin: 1.4rem 0 2.6rem;
     }
 
@@ -985,7 +1030,11 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .funko3 img {
-        width: 30rem;
+        width: 100%;
+    }
+
+    .funko3-div-img{
+        width: 300px;
     }
 
 
@@ -1005,8 +1054,6 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .funko3 hr {
-        width: 80vw;
-        height: 0px;
         margin: 1.4rem 0 2.6rem;
     }
 
@@ -1022,17 +1069,19 @@ input[type=number]::-webkit-outer-spin-button {
     /*Estilos carrousel*/
 
     .section-sec {
-        margin: 0 3.1rem;
+        margin: 0 auto;
         margin-bottom: 3.4rem;
     }
 
     .producto {
-        margin: 1rem;
+        margin: 0 auto;
     }
 
 
     figure {
         position: relative;
+        width: 300px;
+        margin: 0 auto;
     }
 
     .new-text {
@@ -1051,12 +1100,18 @@ input[type=number]::-webkit-outer-spin-button {
         line-height: 2.7rem;
         margin-bottom: 0.3rem;
         margin: 5rem 0rem 3rem;
+        text-align: center;
+    }
+
+    .funkos-carrusel{
+        width: 80%;
+        margin: 0 auto;
     }
 
     .lista-carrusel {
         list-style: none;
-        display: block;
-
+        display: flex;
+        overflow-x: scroll;
     }
 
     .lista-carrusel li img {
@@ -1084,12 +1139,22 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .lista-carrusel li {
-        margin-right: 0rem;
+        margin: 10px 10px 0;
+        width: 300px;
+    }
+
+    .producto:hover{
+        box-shadow: none;
     }
 
     .info-producto p,
     h4 {
         margin: 1.1rem;
+    }
+
+    .info-producto{
+        width: 300px;
+        margin: 0 auto;
     }
 
 
@@ -1149,8 +1214,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 button#filtros {
     display: flex;
-    background: white;
+    background: #FFFFFF;
     border: none;
+    width: 24px;
+    height: 24px;
 }
 
 .form-shop {
@@ -1264,8 +1331,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .funkos-container {
     display: flex;
-    margin: 6.2rem;
-    margin-left: 3rem;
+    margin: 62px auto;
+    
 }
 
 .grid-container {

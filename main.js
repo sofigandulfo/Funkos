@@ -31,7 +31,7 @@ const formFiltro = document.getElementsByClassName("form-shop")[0];
 botonFiltro.addEventListener('click', function () {{
     if (formFiltro.classList.contains('mostrar-form')) {
         formFiltro.style.display = 'none';
-        formFiltro.classList.remove('mostrar-form')
+        formFiltro.classList.remove('mostrar-form');
     }
     else {
         formFiltro.classList.toggle('mostrar-form');
